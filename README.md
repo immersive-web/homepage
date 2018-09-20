@@ -6,7 +6,7 @@ https://www.w3.org/immersive-web/
 
 The Immersive Web Working Group produces the WebXR Device API specification.
 
-* https://immersive-web.github.io/WebXR/
+* https://immersive-web.github.io/webxr/
 
 ## Contributing to the Immersive Web Repository
 
