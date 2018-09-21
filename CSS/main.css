@@ -1,8 +1,16 @@
+html {
+  min-height: 100%;
+  display: flex;
+}
+
 body {
   margin:0;padding:0;
   background: white;
   max-width: 100%;
   font-family: Helvetica,sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 h1 {
@@ -17,10 +25,6 @@ h2, h3, h4, h5, h6 {
 }
 h2 { font-size: 1.3rem;}
 h3 { font-size: 1.1rem;}
-ul, ul li {
-  display: block;
-  margin: 0; padding: 0;
-}
 
 a, a:visited, a:hover, a:focus {
   color: #4184F3;
@@ -62,6 +66,7 @@ header a:hover, header a:focus {
 /*** main ***/
 main {
   display: flex;
+  flex-grow: 1;
   flex-flow: column;
   background: white;
   color: black;
