@@ -1,0 +1,15 @@
+{ "immersive-web/webxr": [
+  {
+    "level" : 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "date": "2019/02/05",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Jan/0003.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Jan/0015.html",
+        "transition": "https://github.com/w3c/transitions/issues/116"
+      }
+    ]
+  }
+  ]
+}
