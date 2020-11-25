@@ -24,9 +24,13 @@ JSON file `list_spec.json` is organized as following format:
           "cfc": "URL for CfC on transition", // normally mail list archive
           "resolution": "URL for resolution of CfC on transition",
           "transition": "URL of github issue on w3c/transitions repository",
-          "pre": { // list of pre process before transition
+          "pre": { // list of pre process items before transition
+            // this include early stage ones (e.g. early TAG review as pre-FPWD)
+            "summary": "URL" // will be shown as link
+            // see below for list of possible keywords
           }, 
-          "post": { // list of post process after transition
+          "post": { // list of post process items after transition
+            // same as 'pre'
           }
         },
         { // continue for other transitions
@@ -40,6 +44,20 @@ JSON file `list_spec.json` is organized as following format:
     // same as first
   ]
 }
-
 ```
+### list of possible keywords for `pre` and `post`
+
+* summary: github issue of tracker for summary of pre/post processes (e.g. HR, announce)
+* Horizontal reviews
+  * tag
+  * a11y
+  * i18n
+  * privacy
+  * security
+* wbs: WBS for W3C-wide review (assuming only AC review after PR)
+* news: post to `w3.org/blog/news` on publication
+* cfw: Call for Exclusion (patent policy)
+
+
+TBD for external groups including liaisons
 

@@ -94,11 +94,20 @@ function refleshListSpec() {
           if (cev['cfc']) { etxt += '[<a href="' + cev['cfc'] + '">CfC</a>] '; }
           if (cev['resolution']) { etxt += '[<a href="' + cev['resolution'] + '">Resolution</a>] '; }
         }
+        etxt += '<ul id="' + eid + '_' + clv + '_' + cev['target'] + '">';
+        if ('pre' in cev) {etxt += '<li>Pre-publish: ' + makeInfoLine(cev['pre']) + '</li>'; }
+        if ('post' in cev) {etxt += '<li>Post-publish: ' + makeInfoLine(cev['post']) + '</li>'; }
+        etxt += '</ul>'
         elem.innerHTML = etxt;
         document.getElementById(eid).appendChild(elem);
       }
     }
   });
+}
+
+function makeInfoLine(hash) {
+  var ret = '';
+  return ret;
 }
 
 function generateTRUrl(shortname, stage, date) {
