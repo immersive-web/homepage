@@ -107,6 +107,16 @@ function refleshListSpec() {
 
 function makeInfoLine(hash) {
   var ret = '';
+  if ('summary' in hash) {
+    ret += '<a href="' + hash['summary'] + '">Summary at github issue</a>';
+  }
+  var review = '';
+  ['tag', 'a11y', 'i18n', 'privacy', 'security'].forEach((id) => {
+    if (id in hash) { review += ' [<a href="' + hash[id] + '">' + id + '</a>] '; }
+  });
+  if (review != '') {
+    ret += 'Reviews (' + review + ')';
+  }
   return ret;
 }
 

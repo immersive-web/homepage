@@ -7,7 +7,20 @@
         "date": "2019/02/05",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Jan/0003.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Jan/0015.html",
-        "transition": "https://github.com/w3c/transitions/issues/116"
+        "transition": "https://github.com/w3c/transitions/issues/116",
+        "post": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/403"
+        }
+      },
+      {
+        "target": "cr",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/545",
+          "i18n": "https://github.com/w3c/i18n-request/issues/127",
+          "a11y": "https://lists.w3.org/Archives/Public/public-apa/2020Sep/0012.html",
+          "privacy": "https://lists.w3.org/Archives/Public/public-privacy/2020JulSep/0016.html",
+          "security": "https://lists.w3.org/Archives/Public/public-web-security/2020Aug/0001.html"
+        }
       }
     ]
   }
