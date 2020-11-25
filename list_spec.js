@@ -27,19 +27,25 @@ function initDataArray(gid) {
     if (w3c_data['groups'][id]) {
       var dh = w3c_data['groups'][id];
       dh['repos'].forEach((repo) => { list_spec.push(repo.fullName); });
-      var elem = document.createElement('li');
-      elem.id = 'lg_' + id;
+      var elem;
+      var pelem = document.getElementById('listgroup');
       var etxt = '';
-      etxt += '<a href="' + dh['_links']['homepage']['href'] + '">' + dh['name'] + '</a> ';
-      etxt += '(' + dh['type'];
+      // h2 + ul
+      elem = document.createElement('h2');
+      elem.innerHTML = '<a href="' + dh['_links']['homepage']['href'] + '">' + dh['name'] + '</a> ';
+      pelem.appendChild(elem);
+      elem = document.createElement('p');
+      etxt += dh['type'];
       etxt += ', <a href="' + dh['_links']['join']['href'] + '">Join</a>';
       etxt += ', <a href="' + dh['_links']['pp-status']['href'] + '">Status</a>';
       if (dh['type'] == 'working group') {
         etxt += ', current charter ends by ' + dh['end-date'];
       }
-      etxt += ')';
       elem.innerHTML = etxt;
-      document.getElementById('listgroup').appendChild(elem);
+      pelem.appendChild(elem);
+      elem = document.createElement('ul');
+      elem.id = 'listspec_' + id;
+      pelem.appendChild(elem);
     };
   });
   w3c_data['repos'].forEach((repo) => {
@@ -61,7 +67,8 @@ function refleshListSpec() {
       etxt += ' (' + hash_spec_info[spec]['w3c']['repo-type'] + ')';
       etxt += '<ul id="siul_' + spec.replace('/', '_') + '"></ul>';
       elem.innerHTML = etxt;
-      document.getElementById('listspec').appendChild(elem);
+      var target = 'listspec_' + hash_spec_info[spec]['w3c']['group'];
+      document.getElementById(target).appendChild(elem);
     }
   });
   Object.keys(hash_tgt_info).forEach((spec) => {
