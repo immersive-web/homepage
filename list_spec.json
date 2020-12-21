@@ -24,5 +24,122 @@
       }
     ]
   }
+  ],
+  "immersive-web/webxr-ar-module": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "cr",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/462"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/hit-test": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/463"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/dom-overlays": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/470"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/anchors": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/479"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/layers": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/528"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/depth-sensing": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/550"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/webxr-hand-input": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/568"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/lighting-estimation": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/574"
+        }
+      }
+    ]
+  }
+  ],
+  "immersive-web/webxr-gamepads-module": [
+  {
+    "level": 1,
+    "events": [
+      {
+        "target": "fpwd",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/430"
+        }
+      }
+    ]
+  }
   ]
 }
