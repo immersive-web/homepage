@@ -30,8 +30,12 @@
     "level": 1,
     "events": [
       {
-        "target": "cr",
-        "pre": {
+        "target": "fpwd",
+        "date": "2019/10/10",
+        "cfc": "://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Aug/0031.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Sep/0011.html",
+        "transition": "https://github.com/w3c/transitions/issues/161",
+        "post": {
           "tag": "https://github.com/w3ctag/design-reviews/issues/462"
         }
       }
@@ -83,6 +87,10 @@
     "events": [
       {
         "target": "fpwd",
+        "date": "2020/12/03",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Nov/0007.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Nov/0010.html",
+        "transition": "https://github.com/w3c/transitions/issues/289",
         "pre": {
           "tag": "https://github.com/w3ctag/design-reviews/issues/528"
         }
@@ -109,7 +117,11 @@
     "events": [
       {
         "target": "fpwd",
-        "pre": {
+        "date": "2020/10/22",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Sep/0005.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Oct/0005.html",
+        "transition": "https://github.com/w3c/transitions/issues/273",
+        "post": {
           "tag": "https://github.com/w3ctag/design-reviews/issues/568"
         }
       }
@@ -135,7 +147,11 @@
     "events": [
       {
         "target": "fpwd",
-        "pre": {
+        "date": "2019/10/10",
+        "cfc": "://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Aug/0031.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Sep/0011.html",
+        "transition": "https://github.com/w3c/transitions/issues/162",
+        "post": {
           "tag": "https://github.com/w3ctag/design-reviews/issues/430"
         }
       }
