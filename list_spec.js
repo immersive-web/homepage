@@ -37,8 +37,8 @@ function initDataArray(gid) {
       elem = document.createElement('p');
       etxt += dh['type'];
       etxt += ', <a href="' + dh['_links']['join']['href'] + '">Join</a>';
-      etxt += ', <a href="' + dh['_links']['pp-status']['href'] + '">Status</a>';
       if (dh['type'] == 'working group') {
+        etxt += ', <a href="' + dh['_links']['pp-status']['href'] + '">Status</a>';
         etxt += ', current charter ends by ' + dh['end-date'];
       }
       elem.innerHTML = etxt;
