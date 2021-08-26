@@ -82,7 +82,7 @@ function refleshListSpec() {
         etxt += 'Level ' + clv + ' ' + cev['target'].toUpperCase();
         etxt += ': ';
         if (cev['date']) {
-          var sname = hash_spec_info[spec]['name']);
+          var sname = hash_spec_info[spec]['name'];
           if (hash_tgt_info[spec]['spec'][id]['shortname']) {
             sname = hash_tgt_info[spec]['spec'][id]['shortname'];
           }
