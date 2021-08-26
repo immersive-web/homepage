@@ -4,6 +4,7 @@
   "spec": [
   {
     "level" : 1,
+    "shortname": "webxr",
     "events": [
       {
         "target": "fpwd",

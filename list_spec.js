@@ -73,16 +73,20 @@ function refleshListSpec() {
   });
   Object.keys(hash_tgt_info).forEach((spec) => {
     var eid = 'siul_' + spec.replace('/', '_');
-    for (var id = 0; id < hash_tgt_info[spec].length; ++id) {
-      var clv = hash_tgt_info[spec][id]['level'];
-      for (var iev = 0; iev < hash_tgt_info[spec][id]['events'].length; ++iev) {
-        var cev = hash_tgt_info[spec][id]['events'][iev];
+    for (var id = 0; id < hash_tgt_info[spec].spec.length; ++id) {
+      var clv = hash_tgt_info[spec]['spec'][id]['level'];
+      for (var iev = 0; iev < hash_tgt_info[spec]['spec'][id]['events'].length; ++iev) {
+        var cev = hash_tgt_info[spec]['spec'][id]['events'][iev];
         var elem = document.createElement('li');
         var etxt = '';
         etxt += 'Level ' + clv + ' ' + cev['target'].toUpperCase();
         etxt += ': ';
         if (cev['date']) {
-          etxt += '<a href="' + generateTRUrl(hash_spec_info[spec]['name'], cev['target'], cev['date']) + '">Published at ' + cev['date'] + '</a> ';
+          var sname = hash_spec_info[spec]['name']);
+          if (hash_tgt_info[spec]['spec'][id]['shortname']) {
+            sname = hash_tgt_info[spec]['spec'][id]['shortname'];
+          }
+          etxt += '<a href="' + generateTRUrl(sname, cev['target'], cev['date']) + '">Published at ' + cev['date'] + '</a> ';
         }
         if (cev['transition']) {
           etxt += '(<a href="' + cev['transition'] + '">Transition request</a>) ';
