@@ -68,6 +68,7 @@
   "spec": [
   {
     "level": 1,
+    "shortname": "webxrlayers-1",
     "events": [
       {
         "target": "fpwd",
