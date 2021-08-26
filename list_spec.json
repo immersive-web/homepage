@@ -62,6 +62,11 @@
     },
     "events": [
       {
+        "target": "wg",
+        "cfc": "https://www.w3.org/2020/04/28-immersive-web-minutes.html#item01",
+        "resolution": "https://github.com/immersive-web/administrivia/issues/91#issuecomment-622475548"
+      },
+      {
         "target": "fpwd",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0008.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0016.html",
@@ -80,6 +85,11 @@
       "2020/Feb initial": "https://github.com/w3ctag/design-reviews/issues/470"
     },
     "events": [
+      {
+        "target": "wg",
+        "cfc": "https://www.w3.org/2020/04/28-immersive-web-minutes.html#item01",
+        "resolution": "https://github.com/immersive-web/administrivia/issues/91#issuecomment-622475548"
+      },
       {
         "target": "fpwd",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0007.html",
@@ -118,6 +128,11 @@
     },
     "events": [
       {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Jun/0002.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Jun/0012.html"
+      },
+      {
         "target": "fpwd",
         "date": "2020/12/03",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Nov/0007.html",
@@ -138,6 +153,11 @@
     },
     "events": [
       {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Mar/0004.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Mar/0013.html"
+      },
+      {
         "target": "fpwd",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0009.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0016.html",
@@ -156,6 +176,11 @@
       "2020/Nov initial": "https://github.com/w3ctag/design-reviews/issues/568"
     },
     "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Jul/0013.html",
+        "resolution": "https://www.w3.org/2020/08/04-immersive-web-minutes.html#item01"
+      },
       {
         "target": "fpwd",
         "date": "2020/10/22",
