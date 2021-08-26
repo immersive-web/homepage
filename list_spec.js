@@ -105,7 +105,11 @@ function refleshListSpec() {
         if (cev['pubreq']) {
           etxt += '(<a href="' + cev['pubreq'] + '">Publication request</a>) ';
         } else if (cev['target'] !== "wg") {
-          etxt += '(No publication request yet) ';
+          etxt += '(No publication request yet';
+          if (cev['expected']) {
+            etxt += "; expected around: " + cev['expected'];
+          }
+          etxt += ') ';
         }
         if (cev['cfc'] || cev['resolution']) {
           etxt += 'Group decision by ';

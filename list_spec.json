@@ -20,6 +20,7 @@
       },
       {
         "target": "cr",
+        "expected": "2020/10",
         "pre": {
           "tag": "https://github.com/w3ctag/design-reviews/issues/545",
           "i18n": "https://github.com/w3c/i18n-request/issues/127",

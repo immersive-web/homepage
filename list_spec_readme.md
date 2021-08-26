@@ -26,16 +26,19 @@ JSON file `list_spec.json` is organized as following format:
       "events":[ //list of events, for transition
         {
           "target": "name of transition", // like "wg", "fpwd", "cr", etc.
-          "date": "date of publish",
+          "expected": "YYYY/MM", // expected transition date, like list of HRs for CR
+          // following two are used for 'Group decision by' part
           "cfc": "URL for CfC on transition", // normally mail list archive
           "resolution": "URL for resolution of CfC on transition",
+          // following two are used for 'Published' and 'Publication request' part, and will not be shown if not set
+          "date": "date of publish",
           "transition": "URL of github issue on w3c/transitions repository",
           "pre": { // list of pre process items before transition
-            // this include early stage ones (e.g. early TAG review as pre-FPWD)
+            // this include early stage ones (e.g. HR for CR)
             "summary": "URL" // will be shown as link
             // see below for list of possible keywords
           }, 
-          "post": { // list of post process items after transition
+          "post": { // list of post process items after transition, like wide review
             // same as 'pre'
           }
         },
@@ -55,7 +58,7 @@ JSON file `list_spec.json` is organized as following format:
 
 * summary: github issue of tracker for summary of pre/post processes (e.g. HR, announce)
 * Horizontal reviews
-  * tag
+  * tag (better to be included for pre-CR review), normally in "tag" list
   * a11y
   * i18n
   * privacy
