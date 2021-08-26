@@ -14,12 +14,18 @@ JSON file `list_spec.json` is organized as following format:
 
 ``` js
 {
-  "spec name by github repository like 'immersive-web/webxr'": [ // list of levels
+  "spec name by github repository like 'immersive-web/webxr'": {
+    "info": {} // currently nothing inside
+    "spec": [ // list of levels
     {
       "level": 1, // number of level
+      "shortname": "shortname in /TR/",
+      "tag": { // TAG review history
+        "YYYY/MM/DD short text": "github issue link"
+      },
       "events":[ //list of events, for transition
         {
-          "target": "name of transition", // like "fpwd", "cr", etc.
+          "target": "name of transition", // like "wg", "fpwd", "cr", etc.
           "date": "date of publish",
           "cfc": "URL for CfC on transition", // normally mail list archive
           "resolution": "URL for resolution of CfC on transition",
@@ -38,11 +44,11 @@ JSON file `list_spec.json` is organized as following format:
       ]
     },
     { // continue for information of another level
-    }
-  ] ,
-  "second spec name": [
+    }]
+  },
+  "second spec name": {
     // same as first
-  ]
+  }
 }
 ```
 ### list of possible keywords for `pre` and `post`
