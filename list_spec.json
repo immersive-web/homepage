@@ -34,6 +34,7 @@
   "spec": [
   {
     "level": 1,
+    "shortname": "webxr-ar-module-1",
     "events": [
       {
         "target": "fpwd",
@@ -68,7 +69,6 @@
   "spec": [
   {
     "level": 1,
-    "shortname": "webxrlayers-1",
     "events": [
       {
         "target": "fpwd",
@@ -99,6 +99,7 @@
   "spec": [
   {
     "level": 1,
+    "shortname": "webxrlayers-1",
     "events": [
       {
         "target": "fpwd",
@@ -133,6 +134,7 @@
   "spec": [
   {
     "level": 1,
+    "shortname": "webxr-hand-input-1",
     "events": [
       {
         "target": "fpwd",
@@ -167,6 +169,7 @@
   "spec": [
   {
     "level": 1,
+    "shortname": "webxr-gamepads-module-1",
     "events": [
       {
         "target": "fpwd",
