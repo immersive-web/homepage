@@ -1,4 +1,7 @@
-{ "immersive-web/webxr": [
+{
+"immersive-web/webxr": {
+  "info": {},
+  "spec": [
   {
     "level" : 1,
     "events": [
@@ -23,9 +26,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/webxr-ar-module": [
+  }]
+  },
+"immersive-web/webxr-ar-module": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -40,9 +45,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/hit-test": [
+  }]
+  },
+"immersive-web/hit-test": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -53,9 +60,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/dom-overlays": [
+  }]
+  },
+"immersive-web/dom-overlays": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -66,9 +75,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/anchors": [
+  }]
+  },
+"immersive-web/anchors": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -79,9 +90,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/layers": [
+  }]
+  },
+"immersive-web/layers": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -96,9 +109,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/depth-sensing": [
+  }]
+  },
+"immersive-web/depth-sensing": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -109,9 +124,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/webxr-hand-input": [
+  }]
+  },
+"immersive-web/webxr-hand-input": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -126,9 +143,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/lighting-estimation": [
+  }]
+  },
+"immersive-web/lighting-estimation": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -139,9 +158,11 @@
         }
       }
     ]
-  }
-  ],
-  "immersive-web/webxr-gamepads-module": [
+  }]
+  },
+"immersive-web/webxr-gamepads-module": {
+  "info": {},
+  "spec": [
   {
     "level": 1,
     "events": [
@@ -156,6 +177,6 @@
         }
       }
     ]
+  }]
   }
-  ]
 }
