@@ -75,23 +75,37 @@ function refleshListSpec() {
     var eid = 'siul_' + spec.replace('/', '_');
     for (var id = 0; id < hash_tgt_info[spec].spec.length; ++id) {
       var clv = hash_tgt_info[spec]['spec'][id]['level'];
+      var sname = hash_spec_info[spec]['name'];
+      if (hash_tgt_info[spec]['spec'][id]['shortname']) {
+        sname = hash_tgt_info[spec]['spec'][id]['shortname'];
+      }
+      var celemid = "spec_" + sname + "_" + clv;
+      var lvelem = document.createElement('li');
+      lvelem.innerHTML = "Level " + clv + " <ul id='" + celemid + "'></ul>";
+      document.getElementById(eid).appendChild(lvelem);
+      // for TAG review
+      if (hash_tgt_info[spec]['spec'][id]['tag']) {
+        var elem_tag = document.createElement('li');
+        var text_tag = "TAG reviews: ";
+        Object.keys(hash_tgt_info[spec]['spec'][id]['tag']).forEach(key =>
+          {text_tag += "[<a href='" + hash_tgt_info[spec]['spec'][id]['tag'][key] + "'>" + key + "</a>]"});
+        elem_tag.innerHTML = text_tag;
+        document.getElementById(celemid).appendChild(elem_tag);
+      }
+      // for events
       for (var iev = 0; iev < hash_tgt_info[spec]['spec'][id]['events'].length; ++iev) {
         var cev = hash_tgt_info[spec]['spec'][id]['events'][iev];
         var elem = document.createElement('li');
         var etxt = '';
-        etxt += 'Level ' + clv + ' ' + cev['target'].toUpperCase();
+        etxt += cev['target'].toUpperCase();
         etxt += ': ';
         if (cev['date']) {
-          var sname = hash_spec_info[spec]['name'];
-          if (hash_tgt_info[spec]['spec'][id]['shortname']) {
-            sname = hash_tgt_info[spec]['spec'][id]['shortname'];
-          }
           etxt += '<a href="' + generateTRUrl(sname, cev['target'], cev['date']) + '">Published at ' + cev['date'] + '</a> ';
         }
-        if (cev['transition']) {
-          etxt += '(<a href="' + cev['transition'] + '">Transition request</a>) ';
-        } else {
-          etxt += '(No transition request yet) ';
+        if (cev['pubreq']) {
+          etxt += '(<a href="' + cev['pubreq'] + '">Publication request</a>) ';
+        } else if (cev['target'] !== "wg") {
+          etxt += '(No publication request yet) ';
         }
         if (cev['cfc'] || cev['resolution']) {
           etxt += 'Group decision by ';
@@ -103,7 +117,7 @@ function refleshListSpec() {
         if ('post' in cev) {etxt += '<li>Post-publish: ' + makeInfoLine(cev['post']) + '</li>'; }
         etxt += '</ul>'
         elem.innerHTML = etxt;
-        document.getElementById(eid).appendChild(elem);
+        document.getElementById(celemid).appendChild(elem);
       }
     }
   });
