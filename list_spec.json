@@ -1,0 +1,258 @@
+{
+"immersive-web/webxr": {
+  "info": {},
+  "spec": [
+  {
+    "level" : 1,
+    "shortname": "webxr",
+    "tag": {
+      "2019/Aug initial": "https://github.com/w3ctag/design-reviews/issues/403",
+      "2020/Dec Dynamic Viewport Scaling": "https://github.com/w3ctag/design-reviews/issues/588",
+      "2020/Aug pre-CR": "https://github.com/w3ctag/design-reviews/issues/545"
+    },
+    "events": [
+      {
+        "target": "fpwd",
+        "date": "2019/02/05",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Jan/0003.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Jan/0015.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/116"
+      },
+      {
+        "target": "cr",
+        "expected": "2020/10",
+        "pre": {
+          "tag": "https://github.com/w3ctag/design-reviews/issues/545",
+          "i18n": "https://github.com/w3c/i18n-request/issues/127",
+          "a11y": "https://lists.w3.org/Archives/Public/public-apa/2020Sep/0012.html",
+          "privacy": "https://lists.w3.org/Archives/Public/public-privacy/2020JulSep/0016.html",
+          "security": "https://lists.w3.org/Archives/Public/public-web-security/2020Aug/0001.html"
+        }
+      }
+    ]
+  }]
+  },
+"immersive-web/webxr-ar-module": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-ar-module-1",
+    "tag": {
+      "2020/Jan initial": "https://github.com/w3ctag/design-reviews/issues/462"
+    },
+    "events": [
+      {
+        "target": "fpwd",
+        "date": "2019/10/10",
+        "cfc": "://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Aug/0031.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Sep/0011.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/161"
+      }
+    ]
+  }]
+  },
+"immersive-web/hit-test": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-hit-test-1",
+    "tag": {
+      "2020/Jan initial": "https://github.com/w3ctag/design-reviews/issues/463"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://www.w3.org/2020/04/28-immersive-web-minutes.html#item01",
+        "resolution": "https://github.com/immersive-web/administrivia/issues/91#issuecomment-622475548"
+      },
+      {
+        "target": "fpwd",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0008.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0016.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/370"
+      }
+    ]
+  }]
+  },
+"immersive-web/dom-overlays": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-dom-overlays-1",
+    "tag": {
+      "2020/Feb initial": "https://github.com/w3ctag/design-reviews/issues/470"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://www.w3.org/2020/04/28-immersive-web-minutes.html#item01",
+        "resolution": "https://github.com/immersive-web/administrivia/issues/91#issuecomment-622475548"
+      },
+      {
+        "target": "fpwd",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0007.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0016.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/369"
+      }
+    ]
+  }]
+  },
+"immersive-web/anchors": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-anchors-1",
+    "tag": {
+      "2020/Feb initial": "https://github.com/w3ctag/design-reviews/issues/479"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0005.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0016.html"
+      }
+    ]
+  }]
+  },
+"immersive-web/layers": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxrlayers-1",
+    "tag": {
+      "2020/Jun initial": "https://github.com/w3ctag/design-reviews/issues/528"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Jun/0002.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Jun/0012.html"
+      },
+      {
+        "target": "fpwd",
+        "date": "2020/12/03",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Nov/0007.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Nov/0010.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/289"
+      }
+    ]
+  }]
+  },
+"immersive-web/depth-sensing": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-depth-sensing-1",
+    "tag": {
+      "2020/Aug initial": "https://github.com/w3ctag/design-reviews/issues/550"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Mar/0004.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Mar/0013.html"
+      },
+      {
+        "target": "fpwd",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0009.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0016.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/371"
+      }
+    ]
+  }]
+  },
+"immersive-web/webxr-hand-input": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-hand-input-1",
+    "tag": {
+      "2020/Nov initial": "https://github.com/w3ctag/design-reviews/issues/568"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Jul/0013.html",
+        "resolution": "https://www.w3.org/2020/08/04-immersive-web-minutes.html#item01"
+      },
+      {
+        "target": "fpwd",
+        "date": "2020/10/22",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Sep/0005.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2020Oct/0005.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/273"
+      }
+    ]
+  }]
+  },
+"immersive-web/lighting-estimation": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxrlightingestimation-1",
+    "tag": {
+      "2020/Nov initial": "https://github.com/w3ctag/design-reviews/issues/574"
+    },
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0019.html"
+      }
+    ]
+  }]
+  },
+"immersive-web/webxr-gamepads-module": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-gamepads-module-1",
+    "tag": {
+      "2019/Oct initial": "https://github.com/w3ctag/design-reviews/issues/430"
+    },
+    "events": [
+      {
+        "target": "fpwd",
+        "date": "2019/10/10",
+        "cfc": "://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Aug/0031.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Sep/0011.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/162"
+      }
+    ]
+  }]
+  },
+"immersive-web/raw-camera-access": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-raw-camera-access-1",
+    "tag": {
+      "2021/Jun initial": "https://github.com/w3ctag/design-reviews/issues/652"
+    },
+    "events": {
+    }
+  }]
+  },
+"immersive-web/real-world-geometry": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-plane-detection-1",
+    "tag": {
+      "2021/Mar initial": "https://github.com/w3ctag/design-reviews/issues/620"
+    },
+    "events": {
+    }
+  }]
+  }
+}
