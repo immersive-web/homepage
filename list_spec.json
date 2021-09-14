@@ -212,6 +212,7 @@
       },
       {
         "target": "fpwd",
+        "date": "2021/09/09",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0004.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Aug/0029.html",
         "pubreq": "https://github.com/w3c/transitions/issues/375"
