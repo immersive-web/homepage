@@ -200,7 +200,7 @@
   "spec": [
   {
     "level": 1,
-    "shortname": "webxrlightingestimation-1",
+    "shortname": "webxr-lighting-estimation-1",
     "tag": {
       "2020/Nov initial": "https://github.com/w3ctag/design-reviews/issues/574"
     },
