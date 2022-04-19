@@ -20,7 +20,10 @@
       },
       {
         "target": "cr",
-        "expected": "2020/10",
+        "date": "2022/03/31",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Jan/0010.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Feb/0005.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/420",
         "pre": {
           "tag": "https://github.com/w3ctag/design-reviews/issues/545",
           "i18n": "https://github.com/w3c/i18n-request/issues/127",
