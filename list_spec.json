@@ -51,6 +51,17 @@
         "cfc": "://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Aug/0031.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Sep/0011.html",
         "pubreq": "https://github.com/w3c/transitions/issues/161"
+      },
+      {
+        "target": "cr",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Jan/0010.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Feb/0005.html",
+        "pre": {
+          "i18n": "https://github.com/w3c/i18n-request/issues/182",
+          "a11y": "https://github.com/w3c/a11y-request/issues/32",
+          "privacy": "https://github.com/w3cping/privacy-request/issues/91",
+          "security": "https://github.com/w3c/security-request/issues/31"
+        }
       }
     ]
   }]
@@ -239,6 +250,17 @@
         "cfc": "://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Aug/0031.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2019Sep/0011.html",
         "pubreq": "https://github.com/w3c/transitions/issues/162"
+      },
+      {
+        "target": "cr",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Jan/0010.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Feb/0005.html",
+        "pre": {
+          "i18n": "https://github.com/w3c/i18n-request/issues/181",
+          "a11y": "https://github.com/w3c/a11y-request/issues/30",
+          "privacy": "https://github.com/w3cping/privacy-request/issues/89",
+          "security": "https://github.com/w3c/security-request/issues/29"
+        }
       }
     ]
   }]
