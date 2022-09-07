@@ -42,7 +42,8 @@
     "level": 1,
     "shortname": "webxr-ar-module-1",
     "tag": {
-      "2020/Jan initial": "https://github.com/w3ctag/design-reviews/issues/462"
+      "2020/Jan initial": "https://github.com/w3ctag/design-reviews/issues/462",
+      "2022/Sep pre-CR": "https://github.com/w3ctag/design-reviews/issues/769"
     },
     "events": [
       {
@@ -241,7 +242,8 @@
     "level": 1,
     "shortname": "webxr-gamepads-module-1",
     "tag": {
-      "2019/Oct initial": "https://github.com/w3ctag/design-reviews/issues/430"
+      "2019/Oct initial": "https://github.com/w3ctag/design-reviews/issues/430",
+      "2022/Sep pre-CR": "https://github.com/w3ctag/design-reviews/issues/770"
     },
     "events": [
       {
