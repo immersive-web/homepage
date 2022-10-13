@@ -14,6 +14,8 @@ The Immersive Web Working Group produces the WebXR Device API specification.
 * [WebXR Layers API](https://github.com/immersive-web/layers)
 * [WebXR Hand Input](https://github.com/immersive-web/webxr-hand-input)
 
+See also [list of all specifications in Working/Community Group with detailed statuses](https://www.w3.org/immersive-web/list_spec.html). 
+
 ## Contributing to the Immersive Web Repository
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md).
