@@ -1,9 +1,12 @@
 const w3c_spec = 'https://w3c.github.io/validate-repos/report.json';
+const specref_api = 'https://api.specref.org/bibrefs?refs=';
+const w3c_tr = 'https://www.w3.org/TR/';
 const target_info = 'list_spec.json'; // json data of spec info
 var w3c_data; // json data from w3c_spec
 var list_spec = []; // list of github fullname like 'immersive-web/webxr'
 var hash_spec_info = {}; 
 var hash_tgt_info = {};
+var hash_specref = {};
 
 // show or not by w3c.json repo-type
 var show_repotype = {
@@ -22,6 +25,7 @@ var show_repotype = {
 };
 
 // constract list_spec and hash_spec_info
+// from w3c spec json, search by group id
 function initDataArray(gid) {
   gid.forEach((id) => {
     if (w3c_data['groups'][id]) {
@@ -56,6 +60,8 @@ function initDataArray(gid) {
   });
 }
 
+// output spec information to html, from constructed data
+// 1st add li per spec, 2nd add status info from local json
 function refleshListSpec() {
   Object.keys(hash_spec_info).forEach((spec) => {
     if (hash_spec_info[spec]['w3cjson'] && 
@@ -81,8 +87,27 @@ function refleshListSpec() {
       }
       var celemid = "spec_" + sname + "_" + clv;
       var lvelem = document.createElement('li');
+      var tr_links = undefined;
+      var editors = undefined;
+      if (sname in hash_specref) {
+        tr_links = 'Links: ';
+        tr_links += '<a href="' + w3c_tr + sname +'/">TR/' + sname + '</a>';
+        tr_links += '; ' + hash_specref[sname]['status'] + ' ';
+        tr_links += '<a href="' + w3c_tr + hash_specref[sname]['date'].slice(-4) + '/';
+        if (hash_specref[sname]['status'] == 'CR') { tr_links += 'CRD-'; }
+        else { tr_links += hash_specref[sname]['status'] + '-'; }
+        tr_links += hash_specref[sname]['versions'][0];
+        tr_links += '/">' + hash_specref[sname]['date'] + '</a>';
+        editors = 'Editors: ';
+        hash_specref[sname]['authors'].forEach((ename) => {
+          editors += '"' + ename + '", ';
+        });
+        editors = editors.slice(0, -2);
+      }
       lvelem.innerHTML = "Level " + clv + " <ul id='" + celemid + "'></ul>";
       document.getElementById(eid).appendChild(lvelem);
+      if (tr_links) { document.getElementById(celemid).innerHTML += '<li>' + tr_links + '</li>'; }
+      if (editors) { document.getElementById(celemid).innerHTML += '<li>' + editors + '</li>'; }
       // for TAG review
       if (hash_tgt_info[spec]['spec'][id]['tag']) {
         var elem_tag = document.createElement('li');
@@ -127,6 +152,7 @@ function refleshListSpec() {
   });
 }
 
+// add review lines
 function makeInfoLine(hash) {
   var ret = '';
   if ('summary' in hash) {
@@ -170,6 +196,19 @@ window.addEventListener('load', function(event) {
   }).catch((error) => { console.log('Error found: ' + error.message); });
   Promise.all([ pm_es, pm_ti ])
   .then(() => {
+    let shorts = '';
+    Object.keys(hash_tgt_info).forEach((spec) => {
+      hash_tgt_info[spec]['spec'].forEach((short) => {
+        shorts += short['shortname'] + ',';
+      });
+    });
+    return fetch(specref_api + shorts.slice(0, -1), {
+      cache: 'no-cache', method: 'GET', redirect: 'follow'});
+  }).then((response) => {
+    if (response.ok) {return response.json(); }
+    return {};
+  }).then((json) => {
+    hash_specref = json;
     refleshListSpec();
   });
 });
