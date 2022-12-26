@@ -26,7 +26,6 @@
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Feb/0005.html",
         "pubreq": "https://github.com/w3c/transitions/issues/420",
         "pre": {
-          "tag": "https://github.com/w3ctag/design-reviews/issues/545",
           "i18n": "https://github.com/w3c/i18n-request/issues/127",
           "a11y": "https://lists.w3.org/Archives/Public/public-apa/2020Sep/0012.html",
           "privacy": "https://lists.w3.org/Archives/Public/public-privacy/2020JulSep/0016.html",
@@ -56,8 +55,10 @@
       },
       {
         "target": "cr",
+        "date": "2022/11/01",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Jan/0010.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Feb/0005.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/448",
         "pre": {
           "i18n": "https://github.com/w3c/i18n-request/issues/182",
           "a11y": "https://github.com/w3c/a11y-request/issues/32",
@@ -258,6 +259,7 @@
         "target": "cr",
         "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Jan/0010.html",
         "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2022Feb/0005.html",
+        "pubreq": "https://github.com/w3c/transitions/issues/449",
         "pre": {
           "i18n": "https://github.com/w3c/i18n-request/issues/181",
           "a11y": "https://github.com/w3c/a11y-request/issues/30",
@@ -289,6 +291,19 @@
     "shortname": "webxr-plane-detection-1",
     "tag": {
       "2021/Mar initial": "https://github.com/w3ctag/design-reviews/issues/620"
+    },
+    "events": {
+    }
+  }]
+  },
+"immersive-web/model-element": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "model-element",
+    "tag": {
+      "CORS for 3rd party sources": "https://github.com/w3ctag/design-reviews/issues/775"
     },
     "events": {
     }
