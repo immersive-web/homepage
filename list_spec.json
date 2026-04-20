@@ -308,5 +308,35 @@
     "events": {
     }
   }]
+  },
+"immersive-web/WebXR-WebGPU-Binding": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-webgpu-binding-1",
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2025Dec/0002.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2026Feb/0000.html"
+      }
+    ]
+  }]
+  },
+"immersive-web/plane-detection": {
+  "info": {},
+  "spec": [
+  {
+    "level": 1,
+    "shortname": "webxr-plane-detection",
+    "events": [
+      {
+        "target": "wg",
+        "cfc": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2025Dec/0003.html",
+        "resolution": "https://lists.w3.org/Archives/Public/public-immersive-web-wg/2026Feb/0000.html"
+      }
+    ]
+  }]
   }
 }
