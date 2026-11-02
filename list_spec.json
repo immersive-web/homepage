@@ -309,12 +309,15 @@
     }
   }]
   },
-"immersive-web/WebXR-WebGPU-Binding": {
+"immersive-web/webxr-webgpu-binding": {
   "info": {},
   "spec": [
   {
     "level": 1,
     "shortname": "webxr-webgpu-binding-1",
+    "tag": {
+      "2026/Oct initial": "https://github.com/w3ctag/design-reviews/issues/1298"
+    },
     "events": [
       {
         "target": "wg",
